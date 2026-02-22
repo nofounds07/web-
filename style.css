@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f5f5f5;
+    line-height: 1.7;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px 60px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.avatar {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255,255,255,0.7);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    margin-bottom: 25px;
+    transition: transform 0.4s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.hero-text {
+    max-width: 650px;
+    margin: auto;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 18px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00d4ff;
+}
+
+/* SECTIONS */
+
+.card-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 40px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.edu-box {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+/* SKILLS */
+
+.skill {
+    margin-bottom: 25px;
+}
+
+.progress {
+    background: rgba(255,255,255,0.2);
+    border-radius: 30px;
+    overflow: hidden;
+    height: 15px;
+    margin-top: 8px;
+}
+
+.bar {
+    height: 15px;
+    border-radius: 30px;
+}
+
+.html { width: 90%; background: #e44d26; }
+.css { width: 85%; background: #264de4; }
+.flex { width: 80%; background: #00d4ff; }
+
+/* GALLERY */
+
+.gallery {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 320px;
+    border-radius: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.gallery-description {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0,0,0,0.6);
+    margin-top: 50px;
+}
+
+/* ADAPTIVE */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .card-section {
+        margin: 30px 15px;
+        padding: 25px;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+}
